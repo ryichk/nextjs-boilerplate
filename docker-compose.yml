@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/web-front
+    command: yarn dev
+    ports:
+      - 8000:3000
+    container_name: nextjs-boilerplate
+
+  storybook:
+    build: .
+    volumes:
+      - .:/web-front
+    command: yarn storybook
+    ports:
+      - 6006:6006
+    container_name: nextjs-boilerplate-storybook
+
