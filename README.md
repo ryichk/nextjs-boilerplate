@@ -131,3 +131,7 @@ amplify delete
 ```
 
 [Deploy and host a hybrid app (SSG and SSR)](https://docs.amplify.aws/guides/hosting/nextjs/q/platform/js/#deploy-and-host-a-hybrid-app-ssg-and-ssr)
+
+## License
+
+Licensed under the MIT License, Copyright © 2021-present ryichk
