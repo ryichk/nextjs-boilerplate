@@ -26,7 +26,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Run the development server:
+### Rename project
+
+Grep all files in the project with `nextjs-boilerplate` and replace them with the project name of your choice.
+
+### Run the development server
 
 ```sh
 docker-compose up
@@ -56,19 +60,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ### Format the code
 
 ```sh
-docker-compose run --rm app yarn format
+docker-compose exec app yarn format
 ```
 
 ### Linting
 
 ```sh
-docker-compose run --rm app yarn lint
+docker-compose exec app yarn lint
 ```
 
 ### Testing
 
 ```sh
-docker-compose run --rm app yarn test
+docker-compose exec app yarn test
 ```
 
 ## Deploy to AWS Amplify
