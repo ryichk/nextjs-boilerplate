@@ -1,7 +1,10 @@
-FROM node:16-alpine
-WORKDIR /web-front
-COPY . /web-front
+FROM node:18
+
+WORKDIR /app
+COPY package.json yarn.lock ./
 
 RUN yarn
+
+VOLUME [ "/app/node_modules" ]
 
 CMD ["yarn", "dev"]
